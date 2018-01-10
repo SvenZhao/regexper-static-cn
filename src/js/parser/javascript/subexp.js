@@ -25,10 +25,9 @@ export default {
 
   labelMap: {
     '?:': '',
-    '?=': 'positive lookahead',
-    '?!': 'negative lookahead'
+    '?=': '右侧内容匹配',
+    '?!': '右侧内容不匹配'
   },
-
   // Renders the subexp into the currently set container.
   _render() {
     // **NOTE:** `this.label()` **MUST** be called here, in _render, and before

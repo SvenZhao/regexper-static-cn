@@ -4,9 +4,9 @@ export default {
   },
   setup() {
     if (this.textValue === '^') {
-      this.label = '开始以';
+      this.label = '开始 >>';
     } else {
-      this.label = '以结束';
+      this.label = '<< 结束';
     }
   }
 };

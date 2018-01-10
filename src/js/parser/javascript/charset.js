@@ -48,7 +48,7 @@ export default {
     // The label for the charset will be:
     // - "One of:" for charsets of the form: `[abc]`.
     // - "None of:" for charsets of the form: `[^abc]`.
-    this.label = (this.properties.invert.textValue === '^') ? '没有' : '其中一个';
+    this.label = (this.properties.invert.textValue === '^') ? '不属于' : '属于';
 
     // Removes any duplicate parts from the charset. This is based on the type
     // and text value of the part, so `[aa]` will have only one item, but

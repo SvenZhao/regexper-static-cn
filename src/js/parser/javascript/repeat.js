@@ -4,7 +4,7 @@
 
 function formatTimes(times) {
   if (times === 1) {
-    return '一次';
+    return '1次';
   } else {
     return `${times} 次`;
   }
@@ -36,14 +36,14 @@ export default {
           if (this.minimum === 0) {
             return undefined;
           }
-          return formatTimes(this.minimum - 1);
+          return `重复${formatTimes(this.minimum - 1)}`;
         } else if (this.minimum <= 1 && this.maximum >= 2) {
-          return `at most ${formatTimes(this.maximum - 1)}`;
+          return `最多重复${formatTimes(this.maximum - 1)}`;
         } else if (this.minimum >= 2) {
           if (this.maximum === -1) {
-            return `${this.minimum - 1}+ 次`;
+            return `至少重复${this.minimum - 1}+ 次`;
           } else {
-            return `${this.minimum - 1}\u2026${formatTimes(this.maximum - 1)}`;
+            return `重复${this.minimum - 1}至${formatTimes(this.maximum - 1)}`;
           }
         }
       }
@@ -63,7 +63,7 @@ export default {
           repeatCount = `at most ${formatTimes(this.maximum)}`;
         } else if (this.minimum >= 2) {
           if (this.maximum === -1) {
-            repeatCount = `${this.minimum}+ times`;
+            repeatCount = `${this.minimum}+ 次`;
           } else {
             repeatCount = `${this.minimum}\u2026${formatTimes(this.maximum)}`;
           }
