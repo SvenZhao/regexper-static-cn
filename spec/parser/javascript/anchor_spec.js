@@ -5,7 +5,7 @@ describe('parser/javascript/anchor.js', function() {
 
   _.forIn({
     '^': {
-      label: 'Start of line'
+      label: '开始行'
     },
     '$': {
       label: 'End of line'

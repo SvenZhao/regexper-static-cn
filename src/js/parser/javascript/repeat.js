@@ -4,9 +4,9 @@
 
 function formatTimes(times) {
   if (times === 1) {
-    return 'once';
+    return '一次';
   } else {
-    return `${times} times`;
+    return `${times} 次`;
   }
 }
 
@@ -41,7 +41,7 @@ export default {
           return `at most ${formatTimes(this.maximum - 1)}`;
         } else if (this.minimum >= 2) {
           if (this.maximum === -1) {
-            return `${this.minimum - 1}+ times`;
+            return `${this.minimum - 1}+ 次`;
           } else {
             return `${this.minimum - 1}\u2026${formatTimes(this.maximum - 1)}`;
           }

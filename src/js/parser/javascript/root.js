@@ -7,9 +7,9 @@ export default {
   type: 'root',
 
   flagLabels: {
-    i: 'Ignore Case',
-    g: 'Global',
-    m: 'Multiline'
+    i: '忽略大小写',
+    g: '全局',
+    m: '多行匹配'
   },
 
   // Renders the root into the currently set container.
