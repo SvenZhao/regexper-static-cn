@@ -1,33 +1,30 @@
 {{#extend "layout"}}
-  {{#content "body"}}
-    <div class="application">
-      <form id="regexp-form">
-        <textarea id="regexp-input" autofocus="autofocus" placeholder="输入正则点击展开"></textarea>
-        <button type="submit">展开</button>
+    {{#content "body"}}
+        <div class="application">
+            <form id="regexp-form">
+                <textarea id="regexp-input" autofocus="autofocus" placeholder="输入正则点击展开"></textarea>
+                <button type="submit">展开</button>
 
-        <ul class="inline-list">
-          <li class="download">
-            <a href="#" class="inline-icon" data-action="download" download="image.svg" type="image/svg+xml">{{icon "#data-transfer-download"}}下载</a>
-          </li>
-          <li class="permalink">
-            <a href="#" class="inline-icon" data-action="permalink">{{icon "#link-intact"}}永久链接</a>
-          </li>
-        </ul>
-      </form>
-    </div>
+                <ul class="inline-list">
+                    <li class="download">
+                        <a href="#" class="inline-icon" data-action="download" download="image.svg"
+                           type="image/svg+xml">{{icon "#data-transfer-download"}}下载</a>
+                    </li>
+                    <li class="permalink">
+                        <a href="#" class="inline-icon" data-action="permalink">{{icon "#link-intact"}}永久链接</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="results">
+            <div id="error"></div>
+            <ul id="warnings"></ul>
+            <div id="regexp-render"></div>
+        </div>
+    {{/content}}
 
-    <div class="results">
-      <div id="error"></div>
-
-      <ul id="warnings"></ul>
-
-      <div id="regexp-render"></div>
-    </div>
-
-  {{/content}}
-
-  {{#content "footer" mode="append"}}
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1272194922'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272194922' type='text/javascript'%3E%3C/script%3E"));</script>
-    <script src="/js/main.js" async defer></script>
-  {{/content}}
+    {{#content "footer" mode="append"}}
+        <script src="https://s13.cnzz.com/z_stat.php?id=1272194922&web_id=1272194922" language="JavaScript"></script>
+        <script src="/js/main.js" async defer></script>
+    {{/content}}
 {{/extend}}

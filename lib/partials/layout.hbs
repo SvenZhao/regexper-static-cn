@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>Regexper{{#if file.frontMatter.title}} - {{file.frontMatter.title}}{{/if}}</title>
-
-    <meta name="description" content="Regular expression visualizer using railroad diagrams" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="theme-color" content="#bada55" />
-
+    <meta name="description" content="Regular expression visualizer using railroad diagrams"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="theme-color" content="#bada55"/>
     {{> "google_analytics"}}
-
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="author" href="humans.txt" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bangers&text=Regxpr" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="author" href="humans.txt"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bangers&text=Regxpr"/>
+    <link rel="stylesheet" href="/css/main.css"/>
     <!-- Built: {{date}} -->
-  </head>
-  <body>
-    <header>
-      <div class="logo">
+</head>
+<body>
+<header>
+    <div class="logo">
         <h1><a href="/">Regexper</a></h1>
         <!-- n. One who regexpes -->
         <span>你以为你只有两个问题&hellip;</span>
-      </div>
+    </div>
 
-      <nav>
+    <nav>
         <ul>
-          <li>
-            <a class="inline-icon" href="/changelog.html">{{icon "#list-rich"}}更新日志</a>
-          </li>
-          <li>
-            <a class="inline-icon" href="/documentation.html">{{icon "#document"}}文档说明</a>
-          </li>
-          <li>
-            <a class="inline-icon" href="https://github.com/javallone/regexper-static">{{icon "#code"}}GitHub源码</a>
-          </li>
+            <li>
+                <a class="inline-icon" target="_blank"
+                   href="http://www.w3school.com.cn/jsref/jsref_obj_regexp.asp">{{icon "#link-intact"}}正则速查说明</a>
+            </li>
+            <li>
+                <a class="inline-icon" href="/changelog.html">{{icon "#list-rich"}}更新日志</a>
+            </li>
+            <li>
+                <a class="inline-icon" href="/documentation.html">{{icon "#document"}}文档说明</a>
+            </li>
+            <li>
+                <a class="inline-icon" href="https://github.com/javallone/regexper-static">{{icon "#code"}}GitHub源码</a>
+            </li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main id="content">
-      {{#block "body"}}{{/block}}
-    </main>
+<main id="content">
+    {{#block "body"}}{{/block}}
+</main>
 
-    <footer>
-      {{#block "footer"}}
+<footer>
+    {{#block "footer"}}
         <ul class="inline-list">
-          <li>Created by <a href="mailto:jeff.avallone@gmail.com">Jeff Avallone</a></li>
-          <li>
-            Generated images licensed:
-            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="https://licensebuttons.net/l/by/3.0/80x15.png" /></a>
-          </li>
+            <li>Created by <a href="mailto:jeff.avallone@gmail.com">Jeff Avallone</a></li>
+            <li>
+                Generated images licensed:
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+                    <img alt="Creative Commons License" src="https://licensebuttons.net/l/by/3.0/80x15.png"/>
+                </a>
+            </li>
         </ul>
-
-        <script type="text/html" id="svg-container-base">
-          {{> "svg_template"}}
-        </script>
-
+        <script type="text/html" id="svg-container-base">{{> "svg_template"}}</script>
         {{> "sentry"}}
-      {{/block}}
-    </footer>
-
-    {{> "open_iconic"}}
-  </body>
+    {{/block}}
+</footer>
+{{> "open_iconic"}}
+</body>
 </html>
