@@ -25,8 +25,8 @@ export default {
 
   labelMap: {
     '?:': '',
-    '?=': '右侧内容匹配',
-    '?!': '右侧内容不匹配'
+    '?=': '零宽正先断言',
+    '?!': '零宽负先断言'
   },
   // Renders the subexp into the currently set container.
   _render() {
