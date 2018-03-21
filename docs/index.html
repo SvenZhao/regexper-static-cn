@@ -12,7 +12,7 @@
     <link rel="author" href="humans.txt"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bangers&text=Regxpr"/>
     <link rel="stylesheet" href="/css/main.css"/>
-    <!-- Built: 2018-01-13T09:38:26.477Z -->
+    <!-- Built: 2018-03-21T08:17:11.537Z -->
 </head>
 <body>
 <header>
@@ -42,35 +42,41 @@
 </header>
 
 <main id="content">
-            <div class="application">
-            <form id="regexp-form">
-                <textarea id="regexp-input" autofocus="autofocus" placeholder="输入正则点击展开"></textarea>
-                <button type="submit">展开</button>
+        <div class="application">
+      <form id="regexp-form">
+        <textarea id="regexp-input" autofocus="autofocus" placeholder="输入JavaScript风格的正则表达式来显示"></textarea>
+        <button type="submit">显示</button>
 
-                <ul class="inline-list">
-                    <li class="download">
-                        <a href="#" class="inline-icon" data-action="download" download="image.svg"
-                           type="image/svg+xml"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 8"><use xlink:href="#data-transfer-download" /></svg>下载</a>
-                    </li>
-                    <li class="permalink">
-                        <a href="#" class="inline-icon" data-action="permalink"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 8"><use xlink:href="#link-intact" /></svg>永久链接</a>
-                    </li>
-                </ul>
-            </form>
-        </div>
-        <div class="results">
-            <div id="error"></div>
-            <ul id="warnings"></ul>
-            <div id="regexp-render"></div>
-        </div>
+        <ul class="inline-list">
+          <li class="download-svg">
+            <a href="#" class="inline-icon" data-action="download-svg" download="image.svg" type="image/svg+xml"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 8"><use xlink:href="#data-transfer-download" /></svg>下载 SVG</a>
+          </li>
+          <li class="download-png">
+            <a href="#" class="inline-icon" data-action="download-png" download="image.png" type="image/png"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 8"><use xlink:href="#data-transfer-download" /></svg>下载 PNG</a>
+          </li>
+          <li class="permalink">
+            <a href="#" class="inline-icon" data-action="permalink"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 8"><use xlink:href="#link-intact" /></svg>永久链接</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div class="results">
+      <div id="error"></div>
+
+      <ul id="warnings"></ul>
+
+      <div id="regexp-render"></div>
+    </div>
+
 
 </main>
 
 <footer>
         <ul class="inline-list">
-            <li>Created by <a href="mailto:jeff.avallone@gmail.com">Jeff Avallone</a></li>
+            <li>作者<a href="mailto:jeff.avallone@gmail.com">Jeff Avallone</a></li>
             <li>
-                Generated images licensed:
+                生成的图像许可:
                 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
                     <img alt="Creative Commons License" src="https://licensebuttons.net/l/by/3.0/80x15.png"/>
                 </a>

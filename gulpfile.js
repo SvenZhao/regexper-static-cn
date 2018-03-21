@@ -30,7 +30,7 @@ gulp.task('default', 'Auto-rebuild site on changes.', ['server', 'docs'], functi
 });
 
 gulp.task('docs', 'Build documentation into ./docs directory.', ['docs:files'], function () {
-    folderToc('./docs1', {
+    folderToc('./docs', {
         filter: '*.html'
     });
 });
@@ -38,7 +38,7 @@ gulp.task('docs', 'Build documentation into ./docs directory.', ['docs:files'], 
 gulp.task('docs:files', false, function () {
     return gulp.src(config.globs.js)
         .pipe(docco())
-        .pipe(gulp.dest('./docs1'));
+        .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('server', 'Start development server.', ['build'], function () {
