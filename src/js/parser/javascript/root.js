@@ -7,6 +7,8 @@ export default {
   type: 'root',
 
   flagLabels: {
+    y: 'Sticky',
+    u: 'Unicode'
     i: '忽略大小写',
     g: '全局',
     m: '多行匹配'
