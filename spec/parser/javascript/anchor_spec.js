@@ -8,7 +8,7 @@ describe('parser/javascript/anchor.js', function() {
       label: '开始行'
     },
     '$': {
-      label: 'End of line'
+      label: '结束行'
     }
   }, (content, str) => {
     it(`parses "${str}" as an Anchor`, function() {
