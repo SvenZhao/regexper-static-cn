@@ -25,8 +25,8 @@ export default {
 
   labelMap: {
     '?:': '',
-    '?=': '零宽正先断言',
-    '?!': '零宽负先断言'
+    '?=': '正向先行',
+    '?!': '负向先行'
   },
   // Renders the subexp into the currently set container.
   _render() {
